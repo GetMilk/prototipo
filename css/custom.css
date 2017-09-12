@@ -1,0 +1,12 @@
+#beje{
+    background-color: cornsilk;
+    color: cornflowerblue
+}
+#azul, #botao, #milk{
+    background-color: skyblue; 
+	box-shadow: none;
+}
+
+html{
+    font-family:arial
+}

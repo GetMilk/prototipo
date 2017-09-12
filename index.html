@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    
+	<title>GetMilk</title>
+    
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Materialize CSS -->
+	  <link rel="stylesheet" href="css/materialize.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    
+    <div class="navbar-fixed">
+        <nav id="azul">
+            
+            <a id="botao"class="btn" data-activates="slide-out" style="float:left;"><i class="material-icons">view_headline</i></a>
+
+            <img id="milk" src="https://vignette3.wikia.nocookie.net/hayday/images/9/92/Milk.png/revision/latest?cb=20150711215049" width="50" height="50" class="circle" style="float:right;"/>
+
+            <div class="nav-wrapper container">
+
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Enviar pergunta</a></li>
+                    <li><a href="#">Enviar comentários</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+        
+    <div class="progress">
+        <div class="indeterminate blue" style="width:20%"></div>
+    </div>  
+
+    <ul id="slide-out" class="side-nav">
+        
+    <li><div class="user-view">
+      <div class="background">
+        <img src="http://udietologa.ru/wp-content/uploads/2016/04/zzhenie-v-zheludke-prichiny-no-ne-izzhoga-moloko-300x200.jpg">
+      </div>
+      <a href="#!user"><img class="circle" src="img/perfil.jpg"></a>
+      <a href="#!name"><span class="white-text name">Mateus Oliveira</span></a>
+      <a href="#!email"><span class="white-text email">mateusoliveira@bol.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>Meus leites</a></li>
+    <li><a id="publicar1"href="#!">Publicar</a></li>
+    <li><a href="#!">Perfil</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Conta</a></li>
+    <li><a class="waves-effect" href="home.html">Sair</a></li>
+    </ul>
+
+    <div class="fixed-action-btn">
+        <a id="publicar"class="waves-effect waves-light btn-floating btn-large blue"> <i class="large material-icons">publish</i></a>
+    </div>
+    
+    <div class="tap-target blue" data-activates="publicar">
+        <div class="tap-target-content">
+          <h5>Atalho</h5>
+          <p>Botão dísponivel para tornar mais prático o envio de leites para o sistema</p>
+        </div>
+    </div>
+    
+    
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <!-- Materialize JS -->
+    <script src="js/materialize.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $(".btn").sideNav();  
+    });
+        
+    $("#publicar1").click(function(){
+        $('.tap-target').tapTarget('open');   
+    });
+    </script>
+
+
+</body>
+</html>

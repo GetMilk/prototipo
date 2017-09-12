@@ -1,0 +1,38 @@
+#icon{
+    color: skyblue;
+}
+#cor{
+    background-color: skyblue;
+}
+#cor2{
+    background-color: white;
+}
+#botao{
+    background-color: skyblue;
+    color: white;
+}
+#texto{
+    color: beige;
+}
+#texto2{
+    color: grey;
+}
+#texto3{
+    color: white;
+}
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: skyblue;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+footer.page-footer {
+  margin: 0;
+}
